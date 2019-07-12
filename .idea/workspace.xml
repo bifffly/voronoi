@@ -45,108 +45,7 @@
       <change beforePath="$PROJECT_DIR$/../src/main/res/values/strings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/res/values/styles.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/test/java/com/example/myapplication/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voronoi.js" beforeDir="false" afterPath="$PROJECT_DIR$/voronoi.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -163,10 +62,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/voronoi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1164">
-              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+            <state relative-caret-position="540">
+              <caret line="138" column="9" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/image.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -277,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562936819104</updated>
-      <workItem from="1562936820218" duration="21566000" />
+      <workItem from="1562936820218" duration="21837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21566000" />
+    <option name="totallyTimeSpent" value="21837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="3773" height="2135" extended-state="6" />
@@ -447,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/voronoi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1164">
-          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
+        <state relative-caret-position="540">
+          <caret line="138" column="9" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
         </state>
       </provider>
     </entry>

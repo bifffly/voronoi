@@ -267,4 +267,4 @@ function color(biome) {
     return null;
 }
 
-generate(600, 600, 300, 5);
+generate(600, 600, 600, 10);
