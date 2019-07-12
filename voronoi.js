@@ -6,6 +6,9 @@ let SimplexNoise = require('simplex-noise');
 let gen = new SimplexNoise();
 let base64Img = require('base64-img');
 
+const width = 600;
+const height = 600;
+
 class Tile {
     constructor(polygon, type, biome, elevation) {
         this.polygon = polygon;
@@ -16,6 +19,15 @@ class Tile {
 
     getVertices() {
         return this.polygon.vertices;
+    }
+
+    isEdge() {
+        for (const vertex of this.polygon.vertices) {
+            if (vertex.x === 0 || vertex.x === width || vertex.y === 0 || vertex.y === height) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 
@@ -120,7 +132,12 @@ function draw(tiles, width, height) {
         for (let i = 1; i < vertices.length - 1; i++) {
             region.lineTo(vertices[i].x, vertices[i].y);
         }
-        context.fillStyle = color(tile.biome);
+        if (tile.isEdge()) {
+            context.fillStyle = color('water');
+        }
+        else {
+            context.fillStyle = color(tile.biome);
+        }
         context.fill(region);
     }
     base64Img.img(canvas.toDataURL(), 'images', 'image', (err, filepath) => {
