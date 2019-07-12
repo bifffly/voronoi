@@ -163,8 +163,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/voronoi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+            <state relative-caret-position="1164">
+              <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
             </state>
           </provider>
         </entry>
@@ -277,23 +277,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562936819104</updated>
-      <workItem from="1562936820218" duration="20925000" />
+      <workItem from="1562936820218" duration="21566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20925000" />
+    <option name="totallyTimeSpent" value="21566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="3773" height="2135" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979983" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32966483" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32966483" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -448,8 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/voronoi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+        <state relative-caret-position="1164">
+          <caret line="253" lean-forward="true" selection-start-line="253" selection-end-line="253" />
         </state>
       </provider>
     </entry>

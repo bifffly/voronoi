@@ -192,7 +192,7 @@ function generateElevation(width, height) {
             let dist = distance(x, y, width, height);
             let maxDist = Math.max(width / 2, height / 2);
             let distPct = dist / maxDist;
-            // noise = (0.45 * noise) + (0.55 * Math.pow(distPct, 2.5));
+            noise = (0.45 * noise) + (0.55 * Math.pow(distPct, 2.5));
             elevation.set(x, y, noise);
         }
     }
