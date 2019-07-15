@@ -6,8 +6,8 @@ let SimplexNoise = require('simplex-noise');
 let gen = new SimplexNoise();
 let base64Img = require('base64-img');
 
-const width = 600;
-const height = 600;
+const width = 1500;
+const height = 1500;
 
 class Tile {
     constructor(polygon, type, biome, elevation) {
@@ -121,10 +121,11 @@ function relaxN(voronoi, diagram, bbox, n) {
     return diagram;
 }
 
-function draw(tiles, width, height) {
+function draw(tiles, regions, width, height) {
     let canvas = createCanvas(width, height);
     let context = canvas.getContext('2d');
     context.lineWidth = 2;
+    context.strokeStyle = color('water');
     for (const tile of tiles) {
         let region = new Path2D();
         let vertices = tile.getVertices();
@@ -139,6 +140,16 @@ function draw(tiles, width, height) {
             context.fillStyle = color(tile.biome);
         }
         context.fill(region);
+    }
+    for (const region of regions) {
+        let vertices = region.getVertices();
+        context.beginPath();
+        context.moveTo(vertices[0].x, vertices[0].y);
+        for (let i = 1; i < vertices.length - 1; i++) {
+            context.lineTo(vertices[i].x, vertices[i].y);
+        }
+        context.stroke();
+        context.closePath();
     }
     base64Img.img(canvas.toDataURL(), 'images', 'image', (err, filepath) => {
         console.log('Saved');
@@ -175,7 +186,11 @@ function generateTiles(polygons, width, height) {
 
 function generate(width, height, n, nRelax) {
     let tiles = generateTiles(generatePolygons(width, height, n, nRelax), width, height);
-    return draw(tiles, width, height);
+    let regions = generateRegions(0.3, 8, 0);
+    return {
+        draw: draw(tiles, regions, width, height),
+        strs: getRegionStrings(regions)
+    };
 }
 
 function noiseAt(nx, ny) {
@@ -205,38 +220,71 @@ function generateElevation(width, height) {
         for (let y = 0; y < height; y++) {
             let nx = x/width - 0.5;
             let ny = y / width - 0.5;
-            let noise = noiseAt(nx, ny);
+            let noise = (1/4.5) * noiseAt(4.5 * nx, 4.5 * ny);
             let dist = distance(x, y, width, height);
             let maxDist = Math.max(width / 2, height / 2);
             let distPct = dist / maxDist;
-            noise = (0.45 * noise) + (0.55 * Math.pow(distPct, 2.5));
+            noise = (0.6 * noise) + (0.4 * Math.pow(distPct, 2.5));
             elevation.set(x, y, noise);
         }
     }
     return elevation;
 }
 
+function generateRegions(centerProp, n, nRelax) {
+    let centerWidth = centerProp * width;
+    let centerHeight = centerProp * height;
+    let minX = (width - centerWidth) / 2;
+    let minY = (height - centerHeight) / 2;
+    let points = [];
+    for (let i = 0; i < n; i++) {
+        let x = (Math.random() * centerWidth) + minX;
+        let y = (Math.random() * centerHeight) + minY;
+        points.push(new Vertex(x, y));
+    }
+    let v = new voronoi();
+    let bbox = {xl: 0, xr: width, yt: 0, yb: height};
+    let diagram = relaxN(v, v.compute(points, bbox), bbox, nRelax);
+    return generateTiles(polygons(diagram), width, height);
+}
+
+function getRegionStrings(regionTiles) {
+    let strs = [];
+    for (const region of regionTiles) {
+        let str = '';
+        for (let i = 0; i < region.getVertices().length; i++) {
+            const vertex = region.getVertices()[i];
+            str += vertex.x + ',' + vertex.y;
+            if (i !== region.getVertices().length - 1) {
+                str += ', ';
+            }
+        }
+        strs.push(str);
+    }
+    return strs;
+}
+
 function type(elevation) {
-    if (elevation < 0.33) {
+    if (elevation < 0.15) {
         return 'water';
     }
     return 'land';
 }
 
 function biome(elevation) {
-    if (elevation < 0.33) {
+    if (elevation < 0.15) {
         return 'water';
     }
-    if (elevation < 0.38) {
+    if (elevation < 0.18) {
         return 'beach';
     }
-    if (elevation < 0.55) {
+    if (elevation < 0.25) {
         return 'grass';
     }
-    if (elevation < 0.7) {
+    if (elevation < 0.3) {
         return 'forest'
     }
-    if (elevation < 0.8) {
+    if (elevation < 0.4) {
         return 'tundra';
     }
     if (elevation < 1) {
@@ -267,4 +315,5 @@ function color(biome) {
     return null;
 }
 
-generate(600, 600, 600, 10);
+let result = generate(width, height, 5000, 10);
+console.log(result.strs);
