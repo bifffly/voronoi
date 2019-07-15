@@ -21,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/../Node/server/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/server/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../line-crush/frontend/src/app/pages/dynamic-island/dynamic-island.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../line-crush/frontend/src/app/pages/dynamic-island/dynamic-island.page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proguard-rules.pro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/main/AndroidManifest.xml" beforeDir="false" />
@@ -64,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/voronoi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="188" column="37" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="226" column="24" selection-start-line="226" selection-start-column="24" selection-end-line="226" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -91,6 +90,7 @@
       <find>draw</find>
       <find>width</find>
       <find>generatePolygons</find>
+      <find>console.</find>
     </findStrings>
     <replaceStrings>
       <replace>v</replace>
@@ -191,12 +191,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562936819104</updated>
       <workItem from="1562936820218" duration="21945000" />
-      <workItem from="1563193957930" duration="8320000" />
+      <workItem from="1563193957930" duration="12279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30265000" />
+    <option name="totallyTimeSpent" value="34224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="3773" height="2135" extended-state="6" />
@@ -303,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/voronoi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="188" column="37" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="226" column="24" selection-start-line="226" selection-start-column="24" selection-end-line="226" selection-end-column="24" />
         </state>
       </provider>
     </entry>

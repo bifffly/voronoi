@@ -6,8 +6,8 @@ let SimplexNoise = require('simplex-noise');
 let gen = new SimplexNoise();
 let base64Img = require('base64-img');
 
-const width = 1500;
-const height = 1500;
+const width = 600;
+const height = 600;
 
 class Tile {
     constructor(polygon, type, biome, elevation) {
@@ -186,7 +186,7 @@ function generateTiles(polygons, width, height) {
 
 function generate(width, height, n, nRelax) {
     let tiles = generateTiles(generatePolygons(width, height, n, nRelax), width, height);
-    let regions = generateRegions(0.3, 8, 0);
+    let regions = generateRegions(0.4, 6, 0);
     return {
         draw: draw(tiles, regions, width, height),
         strs: getRegionStrings(regions)
@@ -265,14 +265,14 @@ function getRegionStrings(regionTiles) {
 }
 
 function type(elevation) {
-    if (elevation < 0.15) {
+    if (elevation < 0.14) {
         return 'water';
     }
     return 'land';
 }
 
 function biome(elevation) {
-    if (elevation < 0.15) {
+    if (elevation < 0.13) {
         return 'water';
     }
     if (elevation < 0.18) {
@@ -315,5 +315,4 @@ function color(biome) {
     return null;
 }
 
-let result = generate(width, height, 5000, 10);
-console.log(result.strs);
+console.log(generate(width, height, 2000, 10).strs);
