@@ -1,38 +1,29 @@
 class Tile {
-    constructor(polygon, elevation, imageWidth, imageHeight) {
+    constructor(polygon, imageWidth, imageHeight) {
         this.polygon = polygon;
-        this.elev = elevation;
-        this.width = imageWidth;
-        this.height = imageHeight;
+        this.centroid = polygon.centroid;
+        this.vertices = polygon.vertices;
+        this.elev = 0;
     }
 
-    getVertices() {
-        return this.polygon.vertices;
-    }
-
-    isEdge() {
-        for (const vertex of this.polygon.vertices) {
-            if (vertex.x === 0 || vertex.x === this.width || vertex.y === 0 || vertex.y === this.height) {
-                return true;
-            }
-        }
-        return false;
+    setElev(elev) {
+        this.elev = elev;
     }
     
     getBiome() {
-        if (this.elev < 0.13) {
+        if (this.elev < 0.35) {
             return 'water';
         }
-        if (this.elev < 0.18) {
+        if (this.elev < 0.4) {
             return 'beach';
         }
-        if (this.elev < 0.25) {
+        if (this.elev < 0.5) {
             return 'grass';
         }
-        if (this.elev < 0.3) {
+        if (this.elev < 0.6) {
             return 'forest'
         }
-        if (this.elev < 0.4) {
+        if (this.elev < 0.7) {
             return 'tundra';
         }
         if (this.elev < 1) {

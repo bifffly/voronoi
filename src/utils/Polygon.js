@@ -1,5 +1,5 @@
-let Vertex = require('./point');
-let VertexSet = require('./pointSet');
+let Vertex = require('./Point');
+let VertexSet = require('./PointSet');
 
 class Polygon {
     constructor(cell) {
