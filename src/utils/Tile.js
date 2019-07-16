@@ -14,7 +14,7 @@ class Tile {
         if (this.elev < 0.35) {
             return 'water';
         }
-        if (this.elev < 0.375) {
+        if (this.elev < 0.36) {
             return 'beach';
         }
         if (this.elev < 0.4) {

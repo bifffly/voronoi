@@ -1,8 +1,32 @@
+let fs = require('fs');
+
 let IslandSeedGenerator = require('./generators/IslandSeedGenerator');
 let TileGenerator = require('./generators/TileGenerator');
 let IslandGenerator = require('./generators/IslandGenerator');
 let RegionGenerator = require('./generators/RegionGenerator');
 let Draw = require('./Draw');
+
+function toStr(regions) {
+    let strs = '[';
+    for (let i = 0; i < regions.length; i++) {
+        let region = regions[i];
+        let str = '[';
+        for (let j = 0; j < region.vertices.length - 1; j++) {
+            let point = region.vertices[j];
+            str += point.x + ',' + point.y;
+            if (j !== region.vertices.length - 2) {
+                str += ', ';
+            }
+        }
+        str += ']';
+        if (i !== regions.length - 1) {
+            str += ', ';
+        }
+        strs += str;
+    }
+    strs += ']';
+    return strs;
+}
 
 function generate(width, height, seedWidthProp, seedHeightProp, regionWidthProp, regionHeightProp,
                   nSeeds, nTiles,  nRegions, nRelax, noiseWeight, granularity) {
@@ -16,6 +40,13 @@ function generate(width, height, seedWidthProp, seedHeightProp, regionWidthProp,
     let regions = regionGen.polygons;
     let draw = new Draw(tiles, regions, width, height);
     draw.draw();
+    fs.writeFile('../bounds/' + draw.name + '.txt', toStr(regions), (err) => {
+        if (err) {
+            console.log(err);
+        }
+    });
 }
 
-generate(5000, 5000, 0.15, 0.15, 0.4, 0.4, 5, 5000, 6, 30, 0.25, 3.5);
+for (let i = 0; i < 5; i++) {
+    generate(5000, 5000, 0.15, 0.15, 0.4, 0.4, 5, 5000, 6, 30, 0.25, 3.5);
+}
