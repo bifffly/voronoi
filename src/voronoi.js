@@ -5,94 +5,12 @@ let ndarray = require('ndarray');
 let SimplexNoise = require('simplex-noise');
 let gen = new SimplexNoise();
 let base64Img = require('base64-img');
+let Tile = require('./utils/tile');
+let Polygon = require('./utils/polygon');
+let Vertex = require('./utils/point');
 
 const width = 600;
 const height = 600;
-
-class Tile {
-    constructor(polygon, type, biome, elevation) {
-        this.polygon = polygon;
-        this.type = type;
-        this.biome = biome;
-        this.elevation = elevation;
-    }
-
-    getVertices() {
-        return this.polygon.vertices;
-    }
-
-    isEdge() {
-        for (const vertex of this.polygon.vertices) {
-            if (vertex.x === 0 || vertex.x === width || vertex.y === 0 || vertex.y === height) {
-                return true;
-            }
-        }
-        return false;
-    }
-}
-
-class VoronoiPolygon {
-    constructor(cell) {
-        let halfedges = cell.halfedges;
-        let vertices = new VertexSet();
-        for (const halfedge of halfedges) {
-            vertices.add(new Vertex(halfedge.getStartpoint().x, halfedge.getStartpoint().y));
-            vertices.add(new Vertex(halfedge.getEndpoint().x, halfedge.getEndpoint().y));
-        }
-        let vertexArr = vertices.arr;
-        vertexArr.push(vertexArr[0]);
-        this.vertices = vertexArr;
-
-        this.area = 0;
-        for (let i = 0; i < this.vertices.length - 1; i++) {
-            this.area += ((this.vertices[i].x * this.vertices[i + 1].y) - (this.vertices[i + 1].x * this.vertices[i].y));
-        }
-        this.area /= -2;
-
-        let cxSum = 0;
-        let cySum = 0;
-        for (let i = 0; i < this.vertices.length - 1; i++) {
-            cxSum += ((this.vertices[i].x + this.vertices[i + 1].x) * ((this.vertices[i].x * this.vertices[i + 1].y) - (this.vertices[i + 1].x * this.vertices[i].y)));
-            cySum += ((this.vertices[i].y + this.vertices[i + 1].y) * ((this.vertices[i].x * this.vertices[i + 1].y) - (this.vertices[i + 1].x * this.vertices[i].y)));
-        }
-        cxSum /= - (6 * this.area);
-        cySum /= - (6 * this.area);
-        this.centroid = ({x: cxSum, y: cySum});
-    }
-}
-
-class Vertex {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-}
-
-class VertexSet {
-    constructor() {
-        this.arr = [];
-    }
-
-    contains(vertex) {
-        for (const v of this.arr) {
-            if (this.equals(v, vertex)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    add(vertex) {
-        if (this.contains(vertex)) {
-            return false;
-        }
-        this.arr.push(vertex);
-    }
-
-    equals(v1, v2) {
-        return v1.x === v2.x && v1.y === v2.y;
-    }
-}
 
 function generatePoints(xMax, yMax, n) {
     let points = [];
@@ -108,8 +26,8 @@ function relax(diagram) {
     let cells = diagram.cells;
     let centroids = [];
     for (const cell of cells) {
-        const voronoiPolygon = new VoronoiPolygon(cell);
-        centroids.push(voronoiPolygon.centroid);
+        const polygon = new Polygon(cell);
+        centroids.push(polygon.centroid);
     }
     return centroids;
 }
@@ -125,7 +43,7 @@ function draw(tiles, regions, width, height) {
     let canvas = createCanvas(width, height);
     let context = canvas.getContext('2d');
     context.lineWidth = 2;
-    context.strokeStyle = color('water');
+    context.strokeStyle = 'rgb(67, 67, 122)';
     for (const tile of tiles) {
         let region = new Path2D();
         let vertices = tile.getVertices();
@@ -134,11 +52,9 @@ function draw(tiles, regions, width, height) {
             region.lineTo(vertices[i].x, vertices[i].y);
         }
         if (tile.isEdge()) {
-            context.fillStyle = color('water');
+            tile.elev = 0;
         }
-        else {
-            context.fillStyle = color(tile.biome);
-        }
+        context.fillStyle = tile.getColor();
         context.fill(region);
     }
     for (const region of regions) {
@@ -151,7 +67,7 @@ function draw(tiles, regions, width, height) {
         context.stroke();
         context.closePath();
     }
-    base64Img.img(canvas.toDataURL(), 'images', 'image', (err, filepath) => {
+    base64Img.img(canvas.toDataURL(), '../images', 'image', (err, filepath) => {
         console.log('Saved');
     });
 }
@@ -159,7 +75,7 @@ function draw(tiles, regions, width, height) {
 function polygons(diagram) {
     let polygons = [];
     for (const cell of diagram.cells) {
-        polygons.push(new VoronoiPolygon(cell));
+        polygons.push(new Polygon(cell));
     }
     return polygons;
 }
@@ -177,9 +93,7 @@ function generateTiles(polygons, width, height) {
     let elevations = generateElevation(width, height);
     for (const polygon of polygons) {
         let elevation = elevations.get(Math.round(polygon.centroid.x), Math.round(polygon.centroid.y));
-        let tileType = type(elevation);
-        let tileBiome = biome(elevation);
-        tiles.push(new Tile(polygon, tileType, tileBiome, elevation));
+        tiles.push(new Tile(polygon, elevation, width, height));
     }
     return tiles;
 }
@@ -262,57 +176,6 @@ function getRegionStrings(regionTiles) {
         strs.push(str);
     }
     return strs;
-}
-
-function type(elevation) {
-    if (elevation < 0.14) {
-        return 'water';
-    }
-    return 'land';
-}
-
-function biome(elevation) {
-    if (elevation < 0.13) {
-        return 'water';
-    }
-    if (elevation < 0.18) {
-        return 'beach';
-    }
-    if (elevation < 0.25) {
-        return 'grass';
-    }
-    if (elevation < 0.3) {
-        return 'forest'
-    }
-    if (elevation < 0.4) {
-        return 'tundra';
-    }
-    if (elevation < 1) {
-        return 'snow';
-    }
-    return null;
-}
-
-function color(biome) {
-    if (biome === 'water') {
-        return 'rgb(67, 67, 122)';
-    }
-    if (biome === 'beach') {
-        return 'rgb(210, 185, 139)';
-    }
-    if (biome === 'grass') {
-        return 'rgb(136, 171, 85)';
-    }
-    if (biome === 'forest') {
-        return 'rgb(67, 136, 85)'
-    }
-    if (biome === 'tundra') {
-        return 'rgb(136, 153, 119)';
-    }
-    if (biome === 'snow') {
-        return 'rgb(222, 222, 229)';
-    }
-    return null;
 }
 
 console.log(generate(width, height, 2000, 10).strs);
