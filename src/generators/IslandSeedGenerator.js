@@ -13,7 +13,8 @@ class IslandSeedGenerator {
             let x = (Math.random() * centerWidth) + minX;
             let y = (Math.random() * centerHeight) + minY;
             let point = new Point(x, y);
-            this.points.push(point);
+            let intensity = (Math.random() * 0.25) + 0.75;
+            this.points.push({point, intensity});
         }
     }
 
@@ -27,7 +28,7 @@ class IslandSeedGenerator {
             let point = new Point(x, y);
             if (this.points.length > 0) {
                 let currPoint = this.points[0];
-                let currDist = distance(point, currPoint);
+                let currDist = distance(point, currPoint.point);
                 let minDist = currDist;
                 for (const pt of this.points) {
                     currDist = distance(point, pt);
@@ -35,7 +36,7 @@ class IslandSeedGenerator {
                         minDist = currDist;
                     }
                 }
-                return 1 - Math.pow(minDist / maxDist, 0.3);
+                return Math.pow(1 - Math.pow(minDist / maxDist, 0.3), currPoint.intensity);
             }
             return null;
         };

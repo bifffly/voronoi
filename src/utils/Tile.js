@@ -14,16 +14,16 @@ class Tile {
         if (this.elev < 0.35) {
             return 'water';
         }
-        if (this.elev < 0.4) {
+        if (this.elev < 0.375) {
             return 'beach';
         }
-        if (this.elev < 0.5) {
+        if (this.elev < 0.4) {
             return 'grass';
         }
-        if (this.elev < 0.6) {
+        if (this.elev < 0.45) {
             return 'forest'
         }
-        if (this.elev < 0.7) {
+        if (this.elev < 0.55) {
             return 'tundra';
         }
         if (this.elev < 1) {
