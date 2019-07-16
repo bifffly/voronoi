@@ -4,7 +4,7 @@ let IslandSeedGenerator = require('./generators/IslandSeedGenerator');
 let TileGenerator = require('./generators/TileGenerator');
 let IslandGenerator = require('./generators/IslandGenerator');
 let RegionGenerator = require('./generators/RegionGenerator');
-let Draw = require('./Draw');
+let Draw = require('./utils/Draw');
 
 function toStr(regions) {
     let strs = '[';

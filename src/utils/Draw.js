@@ -86,15 +86,10 @@ class Draw {
         context.fillText(this.name, 50, 175);
 
         // Saves image
-        return new Promise((resolve, reject) => {
-            base64Img.img(canvas.toDataURL(), '../islands', this.name, (err, filepath) => {
-                if (err) {
-                    reject(err);
-                }
-                else {
-                    resolve();
-                }
-            });
+        base64Img.img(canvas.toDataURL(), '../islands', this.name, (err, filepath) => {
+            if (err) {
+                console.log(err);
+            }
         });
     }
 }
