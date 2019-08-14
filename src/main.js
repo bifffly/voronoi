@@ -40,13 +40,13 @@ function generate(width, height, seedWidthProp, seedHeightProp, regionWidthProp,
     let regions = regionGen.polygons;
     let draw = new Draw(tiles, regions, width, height);
     draw.draw();
-    fs.writeFile('../bounds/' + draw.name + '.txt', toStr(regions), (err) => {
+    fs.writeFile('../bounds/tutorials/' + draw.name + '.txt', toStr(regions), (err) => {
         if (err) {
             console.log(err);
         }
     });
 }
 
-for (let i = 0; i < 5; i++) {
-    generate(5000, 5000, 0.15, 0.15, 0.4, 0.4, 5, 5000, 6, 30, 0.25, 3.5);
+for (let i = 0; i < 10; i++) {
+    generate(600, 600, 0.15, 0.15, 0.4, 0.4, 5, 600, 4, 30, 0.25, 3.5);
 }

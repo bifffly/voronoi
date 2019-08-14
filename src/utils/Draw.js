@@ -69,7 +69,7 @@ class Draw {
         }
 
         // Draws regions
-        context.lineWidth = 20;
+        context.lineWidth = 3;
         context.strokeStyle = 'rgb(67, 67, 122)';
         for (const region of this.regions) {
             context.beginPath();
@@ -81,12 +81,12 @@ class Draw {
             context.closePath();
         }
 
-        context.font = '150px serif';
-        context.fillStyle = 'rgb(188, 188, 133)';
-        context.fillText(this.name, 50, 175);
+        // context.font = '20px serif';
+        // context.fillStyle = 'rgb(188, 188, 133)';
+        // context.fillText(this.name, 5, 20);
 
         // Saves image
-        base64Img.img(canvas.toDataURL(), '../islands', this.name, (err, filepath) => {
+        base64Img.img(canvas.toDataURL(), '../islands/tutorials', this.name, (err, filepath) => {
             if (err) {
                 console.log(err);
             }

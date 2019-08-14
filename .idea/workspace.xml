@@ -2,52 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac399a8e-b6ba-4301-99a9-119973a498c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ImageComparator/src/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../imageresize/.idea/imageresize.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../imageresize/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../imageresize/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../imageresize/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../line-crush/voronoi/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../line-crush/voronoi/voronoi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageComparator/src/Comparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageComparator/src/Pixel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageComparator/src/Grader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageComparator/src/Stacker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageComparator/src/SumMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageComparator/src/SumMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/backend/.idea/backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/backend/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/backend/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Node/server/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Node/server/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/example/myapplication/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/example/myapplication/PaintView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/example/myapplication/ExampleUnitTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voronoi.js" beforeDir="false" afterPath="$PROJECT_DIR$/voronoi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Draw.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,43 +18,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/voronoi.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="226" column="24" selection-start-line="226" selection-start-column="24" selection-end-line="226" selection-end-column="24" />
+            <state relative-caret-position="440">
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/image.png">
-          <provider selected="true" editor-type-id="images" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/Draw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1760">
+              <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>v</find>
       <find>vertices</find>
       <find>dims</find>
-      <find>&quot;</find>
       <find>console.log</find>
       <find>gen</find>
       <find>new Tile(</find>
-      <find>new Tile</find>
       <find>1500</find>
       <find>draw</find>
       <find>width</find>
       <find>generatePolygons</find>
       <find>console.</find>
+      <find>new Tile</find>
+      <find>VoronoiPolygon</find>
+      <find>Vertex</find>
+      <find>elevation</find>
+      <find>color('water')</find>
+      <find>relax</find>
+      <find>vertex</find>
+      <find>noiseAt(</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>v</replace>
       <replace>this.vertices</replace>
-      <replace>'</replace>
       <replace>height</replace>
+      <replace>Polygon</replace>
+      <replace>point</replace>
+      <replace>this.elev</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -105,19 +84,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/vertex.js" />
+        <option value="$PROJECT_DIR$/src/vertexSet.js" />
+        <option value="$PROJECT_DIR$/src/polygon.js" />
+        <option value="$PROJECT_DIR$/src/tile.js" />
         <option value="$PROJECT_DIR$/voronoi.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/voronoi.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/dictionaries/brycecolson.xml" />
-        <option value="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+        <option value="$PROJECT_DIR$/src/utils/vertexSet.js" />
+        <option value="$PROJECT_DIR$/src/utils/vertex.js" />
+        <option value="$PROJECT_DIR$/src/island.js" />
+        <option value="$PROJECT_DIR$/src/islandSeed.js" />
+        <option value="$PROJECT_DIR$/src/utils/tile.js" />
+        <option value="$PROJECT_DIR$/src/voronoi2.js" />
+        <option value="$PROJECT_DIR$/src/TileGenerator.js" />
+        <option value="$PROJECT_DIR$/src/IslandSeedGenerator.js" />
+        <option value="$PROJECT_DIR$/src/IslandGenerator.js" />
+        <option value="$PROJECT_DIR$/src/generators/IslandSeedGenerator.js" />
+        <option value="$PROJECT_DIR$/src/generators/TileGenerator.js" />
+        <option value="$PROJECT_DIR$/src/RegionGenerator.js" />
+        <option value="$PROJECT_DIR$/src/generators/IslandGenerator.js" />
+        <option value="$PROJECT_DIR$/src/generators/RegionGenerator.js" />
+        <option value="$PROJECT_DIR$/src/voronoi.js" />
+        <option value="$PROJECT_DIR$/src/Draw.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/utils/Tile.js" />
+        <option value="$PROJECT_DIR$/src/utils/Draw.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
       </list>
     </option>
   </component>
@@ -133,7 +124,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,19 +134,37 @@
             <path>
               <item name="voronoi" type="b2602c69:ProjectViewProjectNode" />
               <item name="voronoi" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="islands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voronoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voronoi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voronoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voronoi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="voronoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="voronoi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../line-crush/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,6 +175,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/generators" />
+      <recent name="$PROJECT_DIR$/src/utils/" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -191,15 +210,25 @@
       <option name="presentableId" value="Default" />
       <updated>1562936819104</updated>
       <workItem from="1562936820218" duration="21945000" />
-      <workItem from="1563193957930" duration="12279000" />
+      <workItem from="1563193957930" duration="12896000" />
+      <workItem from="1563280854865" duration="22966000" />
+      <workItem from="1563368881378" duration="1874000" />
+      <workItem from="1563453814968" duration="1584000" />
+      <workItem from="1563540759457" duration="1206000" />
+      <workItem from="1563544329061" duration="3000" />
+      <workItem from="1563798870398" duration="1236000" />
+      <workItem from="1563885434634" duration="1297000" />
+      <workItem from="1563974233081" duration="6000" />
+      <workItem from="1563974311844" duration="795000" />
+      <workItem from="1565809574672" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34224000" />
+    <option name="totallyTimeSpent" value="65825000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="3773" height="2135" extended-state="6" />
+    <frame x="67" y="27" width="3773" height="2133" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24979983" />
@@ -214,7 +243,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3301651" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3351676" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -225,91 +254,110 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/image.png.png" />
-    <entry file="file://$PROJECT_DIR$/images/imageundefined.png" />
-    <entry file="file://$PROJECT_DIR$/images/image0.png" />
-    <entry file="file://$PROJECT_DIR$/images/image12.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image13.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image14.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image15.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image16.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image17.png" />
-    <entry file="file://$PROJECT_DIR$/images/image18.png" />
-    <entry file="file://$PROJECT_DIR$/images/image19.png" />
-    <entry file="file://$PROJECT_DIR$/images/image20.png" />
-    <entry file="file://$PROJECT_DIR$/images/image21.png" />
-    <entry file="file://$PROJECT_DIR$/images/image22.png" />
-    <entry file="file://$PROJECT_DIR$/images/image23.png" />
-    <entry file="file://$PROJECT_DIR$/images/image24.png" />
-    <entry file="file://$PROJECT_DIR$/images/image25.png" />
-    <entry file="file://$PROJECT_DIR$/images/image26.png" />
-    <entry file="file://$PROJECT_DIR$/images/image27.png" />
-    <entry file="file://$PROJECT_DIR$/images/image28.png" />
-    <entry file="file://$PROJECT_DIR$/images/image29.png" />
-    <entry file="file://$PROJECT_DIR$/images/image30.png" />
-    <entry file="file://$PROJECT_DIR$/images/image31.png" />
-    <entry file="file://$PROJECT_DIR$/images/image41.png" />
-    <entry file="file://$PROJECT_DIR$/images/image32.png" />
-    <entry file="file://$PROJECT_DIR$/images/image33.png" />
-    <entry file="file://$PROJECT_DIR$/images/image34.png" />
-    <entry file="file://$PROJECT_DIR$/images/image35.png" />
-    <entry file="file://$PROJECT_DIR$/images/image36.png" />
-    <entry file="file://$PROJECT_DIR$/images/image37.png" />
-    <entry file="file://$PROJECT_DIR$/images/image38.png" />
-    <entry file="file://$PROJECT_DIR$/images/image39.png" />
-    <entry file="file://$PROJECT_DIR$/images/image40.png" />
-    <entry file="file://$PROJECT_DIR$/images/image1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image4.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image7.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image8.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image9.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image11.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image10.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/voronoi.js">
+    <entry file="file://$PROJECT_DIR$/src/generators/IslandGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="226" column="24" selection-start-line="226" selection-start-column="24" selection-end-line="226" selection-end-column="24" />
+        <state relative-caret-position="580">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/image.png">
+    <entry file="file://$PROJECT_DIR$/src/generators/TileGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Itaguai Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Klenczner Island.png" />
+    <entry file="file://$PROJECT_DIR$/src/utils/Tile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Schallstadt Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Abali Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Alhawtah Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Biberach Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Danum Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Ikaztegieta Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Jepel Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Kahat Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Paidha Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Pastrana Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Taytanchis Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Tubarjal Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Vinh Yen Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Battonya Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Fardah Island.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Feins Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Gurvansaikhan Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Kogogo Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Thanh Hoa Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Abergorlech Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Alharidhah Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Bijapur Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Ere–o Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Guangning Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Horben Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Mamalu Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Serpeysk Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Ushak Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Nongong Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Amnanum Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Drangsnes Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Honokowai Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Kanglinnguit Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Nyahururu Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Yelandur Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Tarporley Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Abadszalok Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Acaltepecatl Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Alena Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Belyi Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/Der Island.png" />
+    <entry file="file://$PROJECT_DIR$/islands/Chuelles Island.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/islands/tutorials/Pinara Island.png" />
+    <entry file="file://$PROJECT_DIR$/bounds/tutorialsPinara Island.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/Draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1760">
+          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
